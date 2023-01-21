@@ -1,0 +1,196 @@
+:root {
+  --vermelho: #e50913;
+  --preto: #212121;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+  background-image: linear-gradient(to top, var(--preto), #000);
+  font-family: "Arial", Times, serif;
+  color: white;
+}
+
+.container {
+  padding-left: 50px;
+}
+
+/*container inteiro*/
+header .container {
+  background-image: linear-gradient(to top, var(--preto), #000);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+/*logo da Netflix e suas informações*/
+header .logo {
+  margin-left: 50px;
+  padding: 8px;
+  width: 120px;
+  cursor: pointer;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #e2e2e2;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  left: 100%;
+  cursor: pointer;
+
+  transform: translateX(-232%);
+}
+.avatar:hover {
+  opacity: .8;
+}
+
+/*serie-principal e suas informações*/
+.serie-principal {
+  padding: 100px 0;
+  background-image: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,.10)), url("../img/blindspot-wallpaper-preview.jpg");
+
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.serie-principal .sinopse {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #e2e2e2;
+}
+
+.titulo {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.informacoes_serie {
+  font-weight: 600;
+}
+
+.atores,
+.criacao {
+  color: #e2e2e2;
+}
+
+.criacao {
+  margin-bottom: 10px;
+}
+
+.color-green {
+  color: #7CCC91;
+  font-weight: 600;
+}
+
+.color-gray {
+  color: #AAA;
+}
+
+/*botão Assista Agora*/
+.botao1 {
+  background-color: white;
+  border-radius: 2px;
+  border: none;
+  color: black;
+
+  padding: 15px 30px;
+  margin-right: 12px;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao1:hover {
+  opacity: .8;
+}
+.botao1 i {
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+/*botão Mais Informações*/
+.botao2 {
+  background-color: #4F4F4F;
+  border: none;
+  border-radius: 2px;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 12px;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao2:hover {
+  background-color: white;
+  color: black;
+}
+.botao2 i {
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+.serie-principal .container {
+  width: 70%;
+}
+
+/*Informações do bloco das séries*/
+.box-serie {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-series {
+  padding-left: 50px;
+  margin-top: 30px;
+
+}
+
+.titulo_carousel {
+  margin-bottom: 5px;
+}
+
+/*Desenvolvimento*/
+.bg-footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 15px;
+  color: #e2e2e2;
+}
+
+.bg-footer > h2 > span {
+  color: var(--vermelho);
+}
